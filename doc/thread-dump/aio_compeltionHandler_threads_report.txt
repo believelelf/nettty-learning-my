@@ -1,0 +1,92 @@
+"Thread-3@885" daemon prio=5 tid=0x12 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at com.weiquding.netty.learning.aio.client.AsyncTimeClientHandler$1$1.completed(AsyncTimeClientHandler.java:48)
+	  at com.weiquding.netty.learning.aio.client.AsyncTimeClientHandler$1$1.completed(AsyncTimeClientHandler.java:45)
+	  at sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:127)
+	  at sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:282)
+	  at sun.nio.ch.WindowsAsynchronousSocketChannelImpl$WriteTask.completed(WindowsAsynchronousSocketChannelImpl.java:829)
+	  at sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:387)
+	  at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	  at java.lang.Thread.run(Thread.java:844)
+
+"AIO-AsyncTimeClientHandler-001@918" prio=5 tid=0x14 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at jdk.internal.misc.Unsafe.park(Unsafe.java:-1)
+	  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:883)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1037)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	  at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:232)
+	  at com.weiquding.netty.learning.aio.client.AsyncTimeClientHandler.run(AsyncTimeClientHandler.java:105)
+	  at java.lang.Thread.run(Thread.java:844)
+
+"Thread-1@880" daemon prio=5 tid=0x10 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at sun.nio.ch.Iocp.getQueuedCompletionStatus(Iocp.java:-1)
+	  at sun.nio.ch.Iocp.access$300(Iocp.java:44)
+	  at sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:323)
+	  at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	  at java.lang.Thread.run(Thread.java:844)
+
+"Thread-2@881" daemon prio=5 tid=0x11 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at sun.nio.ch.Iocp.getQueuedCompletionStatus(Iocp.java:-1)
+	  at sun.nio.ch.Iocp.access$300(Iocp.java:44)
+	  at sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:323)
+	  at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	  at java.lang.Thread.run(Thread.java:844)
+
+"Thread-4@887" daemon prio=5 tid=0x13 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at sun.nio.ch.Iocp.getQueuedCompletionStatus(Iocp.java:-1)
+	  at sun.nio.ch.Iocp.access$300(Iocp.java:44)
+	  at sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:323)
+	  at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	  at java.lang.Thread.run(Thread.java:844)
+
+"Common-Cleaner@631" daemon prio=8 tid=0xd nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	  at jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	  at java.lang.Thread.run(Thread.java:844)
+	  at jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"Thread-0@874" daemon prio=5 tid=0xf nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at sun.nio.ch.Iocp.getQueuedCompletionStatus(Iocp.java:-1)
+	  at sun.nio.ch.Iocp.access$300(Iocp.java:44)
+	  at sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:323)
+	  at java.lang.Thread.run(Thread.java:844)
+
+"Reference Handler@414" daemon prio=10 tid=0x2 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at java.lang.ref.Reference.waitForReferencePendingList(Reference.java:-1)
+	  at java.lang.ref.Reference.processPendingReferences(Reference.java:174)
+	  at java.lang.ref.Reference.access$000(Reference.java:44)
+	  at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:138)
+
+"Finalizer@415" daemon prio=8 tid=0x3 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:172)
+	  at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+"Signal Dispatcher@416" daemon prio=9 tid=0x4 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
+"Attach Listener@417" daemon prio=5 tid=0x5 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
+"DestroyJavaVM@917" prio=5 tid=0x15 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
