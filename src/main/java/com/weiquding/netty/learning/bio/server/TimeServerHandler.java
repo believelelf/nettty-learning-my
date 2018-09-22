@@ -22,7 +22,6 @@ public class TimeServerHandler implements Runnable {
         try (
                 BufferedReader reader = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
                 PrintWriter writer = new PrintWriter(this.socket.getOutputStream(), true);
-                this.socket;
         ) {
             String currentTime = null;
             String body = null;
@@ -37,6 +36,13 @@ public class TimeServerHandler implements Runnable {
             }
         }catch (IOException e){
             e.printStackTrace();
+        }finally {
+            try {
+                this.socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 }
